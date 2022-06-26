@@ -1,5 +1,3 @@
-import Jimp from 'jimp';
-import robot from 'robotjs';
 import { httpServer } from './src/http_server/index.js';
 import { startWSServer } from './src/webSocetServer/index.js'
 
