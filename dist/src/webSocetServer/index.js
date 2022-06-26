@@ -66,7 +66,7 @@ const startWSServer = () => {
             }
         }));
         ws.on('close', () => {
-            console.log(`WebSocet was closed.`);
+            console.log(`WebSocet was stoped.`);
         });
         ws.on('error', () => {
             console.log(`WebSocet has error.`);
