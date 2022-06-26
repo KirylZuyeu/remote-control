@@ -1,8 +1,8 @@
 import { WebSocketServer } from 'ws';
-import { parseMessage } from './parseMessage.js'
+import { parseMessage } from './parseMessage'
 import robot from 'robotjs';
-import { drawRect, drawCircle } from './drawShapes.js'
-import {createScreen} from './screenCreator.js'
+import { drawRect, drawCircle } from './drawShapes'
+import { createScreen } from './screenCreator'
 
 const SOCER_PORT = 8080;
 
@@ -54,10 +54,10 @@ export const startWSServer = () => {
         });
 
         ws.on('close', () => {
-            console.log(`WebSocet was closed.`)
+            console.log(`WebSocet was stoped.`)
         });
 
-        ws.on('error', error => {
+        ws.on('error', () => {
             console.log(`WebSocet has error.`);
             ws.close();  
         });
